@@ -44,7 +44,7 @@ public class MonthUtils {
         private int day;
         private int workDay;
 
-        public Month(String monthName, int day, int workDay) {
+        private Month(String monthName, int day, int workDay) {
             this.monthName = monthName;
             this.day = day;
             this.workDay = workDay;
