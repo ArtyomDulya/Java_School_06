@@ -1,3 +1,5 @@
+
+
 import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -152,21 +154,29 @@ public class Codewars {
 
     }
 
-//    public static int flattenAndSort(int[][] array) {
-//        int count = 0;
-//        ArrayList <Integer> strList = new ArrayList<Integer>();
-//        String line = "";
-//            for (int i = 0; i < array.length; i++) {
-//                for (int j = 0; j < array[i].length; j++) {
-//                    line += array[i][j] + " ";
-//                }
-//            }
-//
-//            String[]arr =  line.split(" ");
-//
-//
-//        return number;
-//    }
+
+    public static String boredom(Person[] staff) {
+        int count = 0;
+        for (int i = 0; i < staff.length; i++) {
+            if (staff[i].department == "accounts") count += 1;
+            if (staff[i].department == "finance") count += 2;
+            if (staff[i].department == "canteen") count += 10;
+            if (staff[i].department == "regulation") count += 3;
+            if (staff[i].department == "trading") count += 6;
+            if (staff[i].department == "change") count += 6;
+            if (staff[i].department == "IS") count += 8;
+            if (staff[i].department == "retail") count += 5;
+            if (staff[i].department == "cleaning") count += 4;
+            if (staff[i].department == "pissing about") count += 25;
+        }
+
+        if (count <= 80) return "kill me now";
+        if (count < 100 && count > 80) return "i can handle this";
+        if (count >= 100) return "party time!!";
+
+    return null;
+    }
+
 
     public static void main(String[] args) {
         int[] arr = {1, 2, 2};
@@ -179,7 +189,6 @@ public class Codewars {
 //        System.out.println(getFibonacci(2));
 //        System.out.println(encode("ssass"));
 
-        int[] fffrr = flattenAndSort(new int[][]{{3, 5, 8}, {6, 9, 2}});
-        System.out.println(Arrays.toString(fffrr));
+
     }
 }

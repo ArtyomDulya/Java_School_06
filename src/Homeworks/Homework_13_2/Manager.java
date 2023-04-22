@@ -9,6 +9,8 @@ public final class Manager {
     private int numberOfSubordinates;
 
 
+
+
     public int getSalary(MonthUtils.Month[] monthArray) {
         int sumSalary = 0;
         int bonus = 0;

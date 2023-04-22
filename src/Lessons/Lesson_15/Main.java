@@ -3,6 +3,7 @@ package Lessons.Lesson_15;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -36,6 +37,8 @@ public class Main {
 
         GenericExample<Integer> numbers = new GenericExample<>(123);
         System.out.println(numbers.getField());
+
+        System.out.println(arrayList.stream().sorted().collect(Collectors.toList()));
 
 
     }
